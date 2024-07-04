@@ -75,11 +75,12 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
+        const auth = auth();
 
 
         // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        const auth = firebase.auth();
+        //firebase.initializeApp(firebaseConfig);
+        //const auth = firebase.auth();
 
         function login(event) {
             event.preventDefault();
